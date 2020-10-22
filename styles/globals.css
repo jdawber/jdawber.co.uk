@@ -1,15 +1,14 @@
 body {
-	margin:5rem 1rem;
-	font-family:Georgia;
-	background:#f13846;
-	color:#fff;
+	margin:1rem;
+	font-family: 'Roboto', sans-serif;
+	color:#181a1d;
 	text-align:center;
 }
 h1 {
-	margin-bottom:5rem;
+	margin:5rem 0;
 }
 a {
-	color:yellow;
+	color:#d00c2a;
 	text-decoration:none;
 }
 a:hover {
