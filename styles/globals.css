@@ -1,0 +1,17 @@
+body {
+	margin:5rem 1rem;
+	font-family:Georgia;
+	background:#f13846;
+	color:#fff;
+	text-align:center;
+}
+h1 {
+	margin-bottom:5rem;
+}
+a {
+	color:yellow;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
