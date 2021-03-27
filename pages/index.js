@@ -33,7 +33,8 @@ export default function Home() {
 			<main>
 				<section id="introduction">
 					<p>
-						Hi, I'm <span class="highlight">Jonathan Dawber</span>.
+						Hi, I'm{" "}
+						<span className="highlight">Jonathan Dawber</span>.
 						<br />
 						Full-stack developer, architect, leader, mentor.
 					</p>
@@ -64,23 +65,35 @@ export default function Home() {
 				<footer>
 					<ul>
 						<li>
-							<a href="https://www.linkedin.com/in/jdawber/">
-								<LinkedIn class="icon" />
+							<a
+								href="https://www.linkedin.com/in/jdawber/"
+								title="LinkedIn"
+							>
+								<LinkedIn className="icon" />
 							</a>
 						</li>
 						<li>
-							<a href="https://github.com/jdawber/">
-								<GitHub class="icon" />
+							<a
+								href="https://github.com/jdawber/"
+								title="GitHub"
+							>
+								<GitHub className="icon" />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.facebook.com/jdawber/">
-								<Facebook class="icon" />
+							<a
+								href="https://www.facebook.com/jdawber/"
+								title="Facebook"
+							>
+								<Facebook className="icon" />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.instagram.com/jdawber85/">
-								<Instagram class="icon" />
+							<a
+								href="https://www.instagram.com/jdawber85/"
+								title="Instagram"
+							>
+								<Instagram className="icon" />
 							</a>
 						</li>
 					</ul>
