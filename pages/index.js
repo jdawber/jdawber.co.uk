@@ -59,7 +59,6 @@ export default function Home() {
 						<li>CI/CD</li>
 						<li>Infrastructure as Code</li>
 						<li>Terraform</li>
-						<li>DevSecOps</li>
 					</ol>
 				</section>
 				<footer>
