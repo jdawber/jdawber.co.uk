@@ -1,11 +1,18 @@
 import Head from "next/head";
 
+import Down from "../icons/down.svg";
 import LinkedIn from "../icons/linkedin.svg";
 import GitHub from "../icons/github.svg";
 import Facebook from "../icons/facebook.svg";
 import Instagram from "../icons/instagram.svg";
 
 export default function Home() {
+	const onDownArrowPress = () => {
+		document.querySelector("#about").scrollIntoView({
+			behavior: "smooth",
+		});
+	};
+
 	return (
 		<>
 			<Head>
@@ -38,6 +45,7 @@ export default function Home() {
 						<br />
 						Full-stack developer, architect, leader, mentor.
 					</p>
+					<Down className="down-arrow" onClick={onDownArrowPress} />
 				</section>
 				<section id="about">
 					<h1>About Me</h1>

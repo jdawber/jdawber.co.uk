@@ -19,11 +19,23 @@ h1 {
 	align-items: center;
 	justify-content: center;
 	color: #eee;
+	flex-direction: column;
 }
 
 #introduction p {
 	font-size: 1.5rem;
 	margin: 1rem;
+}
+
+.down-arrow {
+	fill: #eee;
+	width: 25px;
+	margin: 20px 0;
+}
+
+.down-arrow:hover {
+	fill: #ff2800;
+	cursor: pointer;
 }
 
 #about {
