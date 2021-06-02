@@ -53,7 +53,9 @@ export default function Home() {
 						<li>HTML</li>
 						<li>CSS</li>
 						<li>JavaScript</li>
+						<li>TypeScript</li>
 						<li>React</li>
+						<li>NextJS</li>
 						<li>Node</li>
 						<li>Java</li>
 						<li>SAP</li>
