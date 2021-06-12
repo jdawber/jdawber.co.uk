@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-family: "Roboto", sans-serif;
+	font-family: sans-serif;
 	color: #252934;
 	text-align: center;
 }
@@ -38,14 +38,6 @@ h1 {
 	cursor: pointer;
 }
 
-#about {
-	padding: 1rem;
-}
-
-section h1 {
-	margin: 50px;
-}
-
 footer {
 	background: #252934;
 	padding: 50px 0;
@@ -73,39 +65,20 @@ footer a:hover .icon {
 	fill: #fff;
 }
 
-#about {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}
-
-#about ol {
-	text-align: left;
-	margin: 0 0 120px 0;
-	padding: 0;
-	width: 100%;
-}
-
-#about li {
-	list-style-type: none;
-	margin-left: 10px;
-}
-
-#about li:before {
-	content: "\2713";
-	margin-right: 10px;
-}
-
 @media only screen and (min-width: 600px) {
 	#introduction p {
 		font-size: 2rem;
 	}
+}
 
-	#about {
-		min-height: 600px;
-	}
+.animate-on-scroll.fade-up {
+	transform: translateY(100px);
+	transition-timing-function: ease;
+	transition-duration: 1s;
+	opacity: 0;
+}
 
-	#about ol {
-		width: 600px;
-	}
+.animate-on-scroll.fade-up.animate {
+	transform: translateY(0);
+	opacity: 1;
 }

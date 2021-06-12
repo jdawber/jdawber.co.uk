@@ -1,76 +1,107 @@
 import Head from "next/head";
 
-import Down from "../icons/down.svg";
 import LinkedIn from "../icons/linkedin.svg";
 import GitHub from "../icons/github.svg";
 import Facebook from "../icons/facebook.svg";
 import Instagram from "../icons/instagram.svg";
 
+import { useEffect, useRef } from "react";
+import Introduction from "../components/Introduction";
+import About from "../components/AboutMe";
+import Skills from "../components/Skills";
+
 export default function Home() {
-	const onDownArrowPress = () => {
-		document.querySelector("#about").scrollIntoView({
-			behavior: "smooth",
-		});
+	useEffect(() => {
+		const animateOnScrollElements =
+			document.querySelectorAll(".animate-on-scroll");
+
+		if (animateOnScrollElements.length) {
+			const intersectionObserver = new IntersectionObserver(
+				(entries, observer) => {
+					entries.forEach((entry) => {
+						if (entry.intersectionRatio > 0) {
+							const target = entry.target;
+							target.classList.add("animate");
+							observer.unobserve(target);
+						}
+					});
+				}
+			);
+
+			animateOnScrollElements.forEach((animateOnScrollElement) => {
+				intersectionObserver.observe(animateOnScrollElement);
+			});
+		}
+	}, []);
+
+	const configuration = {
+		name: "Jonathan Dawber",
+		summary: "Developer, architect, leader, mentor.",
+		googleSiteVerification: "c4Xf-Mdm2ka3EEruESb1i7n39zzbG-R1tlXWzWzXB7c",
+		skills: [
+			{ key: "html", name: "HTML" },
+			{ key: "css", name: "CSS" },
+			{ key: "js", name: "JavaScript" },
+			{ key: "ts", name: "TypeScript" },
+			{ key: "jsx", name: "React" },
+			{ key: "next", name: "NextJS" },
+			{ key: "node", name: "Node" },
+			{ key: "java", name: "Java" },
+			{ key: "sap", name: "SAP" },
+			{ key: "abap", name: "ABAP" },
+			{ key: "sapui5", name: "SAPUI5/OpenUI5" },
+			{ key: "fiori", name: "Fiori" },
+			{ key: "aws", name: "Amazon Web Services" },
+			{ key: "gcp", name: "Google Cloud Platform" },
+			{ key: "btp", name: "SAP Business Technology Platform" },
+			{ key: "jira", name: "Certified Jira Administrator" },
+			{ key: "devsecops", name: "DevSecOps" },
+			{ key: "cicd", name: "CI/CD" },
+			{ key: "iac", name: "Infrastructure as Code" },
+			{ key: "terraform", name: "Terraform" },
+		],
 	};
+
+	const title = `${configuration.name}'s personal website. ${configuration.summary}`;
+
+	let scrollToReference = useRef();
 
 	return (
 		<>
 			<Head>
 				<title>
-					Jonathan Dawber | Full-stack developer, architect, leader,
-					mentor.
+					{configuration.name} | {configuration.summary}
 				</title>
-				<meta
-					name="description"
-					content="Jonathan Dawber's personal website. Full-stack developer, architect, leader, mentor."
-				/>
+				<meta name="description" content={title} />
 				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1, user-scalable=1"
 				/>
 				<meta
 					name="google-site-verification"
-					content="c4Xf-Mdm2ka3EEruESb1i7n39zzbG-R1tlXWzWzXB7c"
+					content={configuration.googleSiteVerification}
 				/>
 				<link
 					rel="dns-prefetch"
 					href="https://www.googletagmanager.com"
 				/>
 			</Head>
-			<main>
-				<section id="introduction">
-					<p>
-						Hi, I'm{" "}
-						<span className="highlight">Jonathan Dawber</span>.
-						<br />
-						Full-stack developer, architect, leader, mentor.
-					</p>
-					<Down className="down-arrow" onClick={onDownArrowPress} />
-				</section>
-				<section id="about">
-					<h1>About Me</h1>
-					<ol>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-						<li>TypeScript</li>
-						<li>React</li>
-						<li>NextJS</li>
-						<li>Node</li>
-						<li>Java</li>
-						<li>SAP</li>
-						<li>ABAP</li>
-						<li>SAPUI5</li>
-						<li>Amazon Web Services</li>
-						<li>Google Cloud Platform</li>
-						<li>SAP Business Technology Platform</li>
-						<li>Certified Jira Administrator</li>
-						<li>DevSecOps</li>
-						<li>CI/CD</li>
-						<li>Infrastructure as Code</li>
-						<li>Terraform</li>
-					</ol>
-				</section>
+			<main id="main">
+				<Introduction
+					name={configuration.name}
+					summary={configuration.summary}
+					scrollTo={scrollToReference}
+				/>
+				<About
+					ref={scrollToReference}
+					backgroundColour="#f7f8fa"
+					animateOnScroll="fade-up"
+				/>
+				<Skills
+					skills={configuration.skills}
+					backgroundColour="#fff"
+					animateOnScroll="fade-up"
+				/>
 				<footer>
 					<ul>
 						<li>
