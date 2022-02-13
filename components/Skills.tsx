@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { forwardRef } from "react";
+import { FC, forwardRef } from "react";
 
 import Section from "./Section";
 
@@ -19,9 +19,19 @@ const Skill = styled.li`
 	}
 `;
 
-const Skills = forwardRef((props, ref) => {
-	const { skills, backgroundColour, animateOnScroll } = props;
-	return (
+interface Skill {
+	key: string;
+	name: string;
+}
+
+interface SkillsProps {
+	skills: Skill[];
+	backgroundColour: string;
+	animateOnScroll: "fade-up" | null;
+}
+
+const Skills = forwardRef<HTMLInputElement, SkillsProps>(
+	({ skills, backgroundColour, animateOnScroll }, ref) => (
 		<Section
 			title="Skills"
 			backgroundColour={backgroundColour}
@@ -34,7 +44,8 @@ const Skills = forwardRef((props, ref) => {
 				))}
 			</SkillList>
 		</Section>
-	);
-});
+	)
+);
 
 export default Skills;
+export { Skill };

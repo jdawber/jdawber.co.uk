@@ -19,7 +19,14 @@ const SectionContent = styled.div`
 	}
 `;
 
-const Section = forwardRef(
+interface SectionProps {
+	title: string;
+	backgroundColour: string;
+	animateOnScroll: "fade-up" | null;
+	children: React.ReactNode;
+}
+
+const Section = forwardRef<HTMLInputElement, SectionProps>(
 	({ title, backgroundColour, animateOnScroll, children }, ref) => {
 		let animateOnScrollClasses = "";
 

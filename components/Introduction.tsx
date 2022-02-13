@@ -1,6 +1,13 @@
 import Down from "../icons/down.svg";
+import { RefObject } from "react";
 
-const Introduction = ({ name, summary, scrollTo }) => {
+interface IntroductionProps {
+	name: string;
+	summary: string;
+	scrollTo: RefObject<HTMLDivElement>;
+}
+
+const Introduction = ({ name, summary, scrollTo }: IntroductionProps) => {
 	const onDownArrowPress = () => {
 		scrollTo.current.scrollIntoView({
 			behavior: "smooth",
