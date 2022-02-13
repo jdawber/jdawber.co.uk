@@ -8,7 +8,8 @@ h1 {
 	margin: 0;
 }
 
-.highlight {
+.highlight,
+a {
 	color: #ff2800;
 }
 

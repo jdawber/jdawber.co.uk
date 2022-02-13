@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { forwardRef } from "react";
 
 import Section from "./Section";
 
@@ -18,7 +19,7 @@ const Skill = styled.li`
 	}
 `;
 
-const Skills = React.forwardRef((props, ref) => {
+const Skills = forwardRef((props, ref) => {
 	const { skills, backgroundColour, animateOnScroll } = props;
 	return (
 		<Section

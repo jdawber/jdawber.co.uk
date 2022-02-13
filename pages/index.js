@@ -46,6 +46,7 @@ export default function Home() {
 			{ key: "jsx", name: "React" },
 			{ key: "next", name: "NextJS" },
 			{ key: "node", name: "Node" },
+			{ key: "graphql", name: "GraphQL" },
 			{ key: "java", name: "Java" },
 			{ key: "sap", name: "SAP" },
 			{ key: "abap", name: "ABAP" },

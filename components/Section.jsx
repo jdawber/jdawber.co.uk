@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { forwardRef } from "react";
 
 import Title from "./SectionTitle";
 
@@ -18,7 +19,7 @@ const SectionContent = styled.div`
 	}
 `;
 
-const Section = React.forwardRef(
+const Section = forwardRef(
 	({ title, backgroundColour, animateOnScroll, children }, ref) => {
 		let animateOnScrollClasses = "";
 
