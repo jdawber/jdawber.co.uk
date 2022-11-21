@@ -22,8 +22,9 @@ const AboutMe = forwardRef<HTMLInputElement, AboutMeProps>(
 			ref={ref}
 		>
 			<p>
-				Experienced Software Engineering professional with 15+ years’ experience
-				working with small and large global organisations.
+				Experienced Software Engineering professional with 16+ years’ experience
+				working with small and large global organisations including fast paced,
+				software as a service start-ups.
 			</p>
 			<p>
 				Passion for web technologies with skills in development, software and
