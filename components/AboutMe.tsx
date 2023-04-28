@@ -4,10 +4,6 @@ import { forwardRef } from "react";
 
 import Section from "./Section";
 
-const HopinLogoContainer = styled.div`
-	margin-top: 2rem;
-`;
-
 interface AboutMeProps {
 	backgroundColour: string;
 	animateOnScroll: "fade-up" | null;
@@ -40,14 +36,7 @@ const AboutMe = forwardRef<HTMLInputElement, AboutMeProps>(
 				and driven to constantly self-improve and influence others.
 			</p>
 			<p>
-				I'm currently a Senior Frontend Engineer at{" "}
-				<a href="https://www.hopin.com/">Hopin</a>, Europe's fastest-growing
-				ever start up.
-				<HopinLogoContainer>
-					<a href="https://www.hopin.com/">
-						<Image src="/hopin.png" alt="Hopin" width="128" height="125" />
-					</a>
-				</HopinLogoContainer>
+				I'm currently contracting at <a href="https://www.adobe.com/uk/">Adobe</a> as a Frontend Engineer.
 			</p>
 		</Section>
 	)
