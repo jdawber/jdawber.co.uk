@@ -36,7 +36,7 @@ const AboutMe = forwardRef<HTMLInputElement, AboutMeProps>(
 				and driven to constantly self-improve and influence others.
 			</p>
 			<p>
-				I'm currently contracting at <a href="https://www.adobe.com/uk/">Adobe</a> as a Frontend Engineer.
+				I'm currently working at <a href="https://www.and.digital">AND Digital</a> as a Senior Product Developer.
 			</p>
 		</Section>
 	)
