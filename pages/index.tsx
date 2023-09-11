@@ -19,7 +19,7 @@ interface Configuration {
 
 const configuration: Configuration = {
 	name: "Jonathan Dawber",
-	summary: "Developer, architect, leader, mentor.",
+	summary: "Specialist in Frontend Development, AWS, CICD and DevOps.",
 	googleSiteVerification: "c4Xf-Mdm2ka3EEruESb1i7n39zzbG-R1tlXWzWzXB7c",
 	skills: [
 		{ key: "html", name: "HTML" },
@@ -38,11 +38,11 @@ const configuration: Configuration = {
 		{ key: "aws", name: "Amazon Web Services" },
 		{ key: "gcp", name: "Google Cloud Platform" },
 		{ key: "btp", name: "SAP Business Technology Platform" },
-		{ key: "jira", name: "Certified Jira Administrator" },
 		{ key: "devsecops", name: "DevSecOps" },
 		{ key: "cicd", name: "CI/CD" },
 		{ key: "iac", name: "Infrastructure as Code" },
 		{ key: "terraform", name: "Terraform" },
+		{ key: "devex", name: "Developer Experience" },
 	],
 };
 
