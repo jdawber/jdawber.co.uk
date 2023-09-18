@@ -1,85 +1,73 @@
 body {
-	margin: 0;
-	font-family: sans-serif;
-	color: #252934;
-	text-align: center;
+  margin: 0;
+  font-family: sans-serif;
+  color: #252934;
+  text-align: center;
 }
 h1 {
-	margin: 0;
+  margin: 0;
 }
 
 .highlight,
 a {
-	color: #ff2800;
+  color: #ff2800;
 }
 
 #introduction {
-	background: #252934;
-	height: calc(100vh);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #eee;
-	flex-direction: column;
+  background: #252934;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  flex-direction: column;
 }
 
 #introduction p {
-	font-size: 1.5rem;
-	margin: 1rem;
+  font-size: 1.5rem;
+  margin: 1rem;
 }
 
 .down-arrow {
-	fill: #eee;
-	width: 25px;
-	margin: 20px 0;
+  fill: #eee;
+  width: 25px;
+  margin: 20px 0;
 }
 
 .down-arrow:hover {
-	fill: #ff2800;
-	cursor: pointer;
+  fill: #ff2800;
+  cursor: pointer;
 }
 
 footer {
-	background: #252934;
-	padding: 50px 0;
-	text-align: center;
+  background: #252934;
+  padding: 50px 0;
+  text-align: center;
 }
 
 footer ul {
-	display: flex;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 footer li {
-	margin: 0 20px;
+  margin: 0 20px;
 }
 
 .icon {
-	fill: #eee;
-	width: 25px;
+  fill: #eee;
+  width: 25px;
 }
 
 footer a:hover .icon {
-	fill: #fff;
+  fill: #fff;
 }
 
 @media only screen and (min-width: 600px) {
-	#introduction p {
-		font-size: 2rem;
-	}
-}
-
-.animate-on-scroll.fade-up {
-	transform: translateY(100px);
-	transition-timing-function: ease;
-	transition-duration: 1s;
-	opacity: 0;
-}
-
-.animate-on-scroll.fade-up.animate {
-	transform: translateY(0);
-	opacity: 1;
+  #introduction p {
+    font-size: 2rem;
+    margin: 50px 0;
+  }
 }
