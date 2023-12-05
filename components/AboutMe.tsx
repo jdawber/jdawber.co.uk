@@ -23,7 +23,7 @@ const AboutMe = ({ backgroundColour }: AboutMeProps) => (
       influence others.
     </p>
     <p>
-      I'm currently working at <a href="https://www.and.digital">AND Digital</a> as a Senior Product Developer.
+      I'm currently working at <a href="https://www.adobe.com">Adobe</a> as a Software Development Engineer.
     </p>
   </Section>
 );
